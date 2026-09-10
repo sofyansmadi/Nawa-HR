@@ -4,7 +4,7 @@ const translations = {
     "nav.home":"الرئيسية","nav.features":"المزايا","nav.pricing":"الأسعار","nav.about":"من نحن","nav.contact":"تواصل معنا",
     "nav.cta":"ابدأ تجربتك المجانية",
 
-    "hero.headline":"نظام موارد بشرية تقدر عليه الشركات الصغيرة والمتوسطة",
+    "hero.headline":"نظام موارد بشرية مصمم لشركتك",
     "hero.sub":"نواة HR يمنح فريقك بوابة داخلية خاصة بشركتك — حضور وانصراف، إجازات، وتقييم أداء سنوي — على نطاقك الفرعي الخاص، وبدون فاتورة الأنظمة العالمية الكبيرة.",
     "hero.cta1":"ابدأ الآن","hero.cta2":"شاهد الأسعار",
     "hero.stat1n":"٪٧٠ أقل","hero.stat1l":"من تكلفة الأنظمة العالمية",
@@ -144,7 +144,7 @@ const translations = {
     "nav.home":"Home","nav.features":"Features","nav.pricing":"Pricing","nav.about":"About","nav.contact":"Contact",
     "nav.cta":"Start free trial",
 
-    "hero.headline":"HR software small and mid-sized companies can actually afford",
+    "hero.headline":"HR software built for your company",
     "hero.sub":"Nawa HR gives your team its own internal portal — attendance, leave, and annual performance reviews — on your own subdomain, without the enterprise price tag.",
     "hero.cta1":"Get started","hero.cta2":"See pricing",
     "hero.stat1n":"70% less","hero.stat1l":"than enterprise HR platforms",
