@@ -30,6 +30,19 @@
     return '$' + v.toLocaleString('en-US');
   }
 
+  const SUB_TICKS = [1, 10, 20, 30, 40, 50];
+  const ONCE_TICKS = [1, 100, 200, 300, 400, '500+'];
+
+  function applyModeRange(mode){
+    const slider = document.getElementById('empSlider');
+    const ticksEl = document.getElementById('rangeTicks');
+    const max = mode === 'sub' ? 50 : 500;
+    slider.max = String(max);
+    if(parseInt(slider.value, 10) > max) slider.value = String(max);
+    const ticks = mode === 'sub' ? SUB_TICKS : ONCE_TICKS;
+    ticksEl.innerHTML = ticks.map(t => '<span>' + t + '</span>').join('');
+  }
+
   function update(){
     const slider = document.getElementById('empSlider');
     const mode = document.querySelector('.pricing-toggle button.active').getAttribute('data-mode');
@@ -81,10 +94,12 @@
       btn.addEventListener('click', ()=>{
         document.querySelectorAll('.pricing-toggle button').forEach(b=> b.classList.remove('active'));
         btn.classList.add('active');
+        applyModeRange(btn.getAttribute('data-mode'));
         update();
       });
     });
     window.onLanguageApplied = update;
+    applyModeRange(document.querySelector('.pricing-toggle button.active').getAttribute('data-mode'));
     update();
   });
 })();
