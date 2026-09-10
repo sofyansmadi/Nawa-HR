@@ -1,17 +1,25 @@
 /* Nawa HR — pricing calculator */
 (function(){
-  const PER_EMPLOYEE_MONTHLY = 2.5;
-  const MONTHLY_FLOOR = 49;
+  const SETUP_FEE = 150;
+  const MONTHLY_TIERS = [
+    { max: 5, price: 25 },
+    { max: 10, price: 50 },
+    { max: 20, price: 100 },
+    { max: 40, price: 125 },
+    { max: 50, price: 150 }
+  ];
   const ONE_TIME_TIERS = [
-    { max: 20, price: 999 },
-    { max: 50, price: 1999 },
-    { max: 100, price: 3499 },
-    { max: 250, price: 5999 },
-    { max: 500, price: 9999 }
+    { max: 50, price: 599 },
+    { max: 100, price: 899 },
+    { max: 200, price: 1499 },
+    { max: 300, price: 2199 },
+    { max: 400, price: 2799 },
+    { max: 500, price: 3199 }
   ];
 
-  function monthlyPrice(n){
-    return Math.max(MONTHLY_FLOOR, Math.round(n * PER_EMPLOYEE_MONTHLY));
+  function monthlyTierPrice(n){
+    for(const tier of MONTHLY_TIERS){ if(n <= tier.max) return tier.price; }
+    return null; // 50+ -> contact us
   }
   function oneTimePrice(n){
     for(const tier of ONE_TIME_TIERS){ if(n <= tier.max) return tier.price; }
@@ -36,15 +44,25 @@
     const dict = translations[lang];
 
     if(mode === 'sub'){
-      priceEl.textContent = formatMoney(monthlyPrice(n));
-      unitEl.textContent = ' / ' + dict['pricepage.permonth'];
-      noteEl.textContent = dict['pricepage.subnote'];
-      contactNote.style.display = 'none';
+      const tierPrice = monthlyTierPrice(n);
+      if(tierPrice === null){
+        priceEl.textContent = lang === 'ar' ? 'تواصل معنا' : 'Contact us';
+        unitEl.textContent = '';
+        noteEl.textContent = '';
+        contactNote.querySelector('span').textContent = dict['pricepage.subnote50'];
+        contactNote.style.display = 'flex';
+      } else {
+        priceEl.textContent = formatMoney(tierPrice + SETUP_FEE);
+        unitEl.textContent = ' / ' + dict['pricepage.firstmonth'];
+        noteEl.textContent = dict['pricepage.thenmonthly'].replace('{price}', formatMoney(tierPrice));
+        contactNote.style.display = 'none';
+      }
     } else {
       const p = oneTimePrice(n);
       if(p === null){
         priceEl.textContent = lang === 'ar' ? 'تواصل معنا' : 'Contact us';
         unitEl.textContent = '';
+        contactNote.querySelector('span').textContent = dict['pricepage.note'];
         contactNote.style.display = 'flex';
       } else {
         priceEl.textContent = formatMoney(p);
