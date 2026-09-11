@@ -14,6 +14,23 @@ const translations = {
 
     "logos.title":"مبني لفرق من ٥ موظفين وحتى ٥٠٠ وأكثر",
 
+    /* admin dashboard preview */
+    "admindemo.badge":"لوحة تحكم الأدمن",
+    "admindemo.title":"هيك رح تشوف لوحة تحكم شركتك",
+    "admindemo.sub":"لوحة كاملة لإدارة الموظفين والحضور والإجازات وتقييم الأداء، بهوية شركتك وعلى نطاقك الخاص.",
+    "admindemo.nav1":"لوحة التحكم","admindemo.nav2":"الموظفون","admindemo.nav3":"الحضور والانصراف",
+    "admindemo.nav4":"الإجازات","admindemo.nav5":"تقييم الأداء","admindemo.nav6":"الإعدادات",
+    "admindemo.stat1l":"عدد الموظفين","admindemo.stat1n":"٤٨",
+    "admindemo.stat2l":"حاضر اليوم","admindemo.stat2n":"٤٤",
+    "admindemo.stat3l":"طلبات إجازة معلقة","admindemo.stat3n":"٣",
+    "admindemo.stat4l":"تقييمات مستحقة","admindemo.stat4n":"٥",
+    "admindemo.col1":"الموظف","admindemo.col2":"القسم","admindemo.col3":"الحالة",
+    "admindemo.emp1":"سارة يوسف","admindemo.emp2":"عمر مراد","admindemo.emp3":"لينا نمر","admindemo.emp4":"كريم حداد",
+    "admindemo.init1":"س ي","admindemo.init2":"ع م","admindemo.init3":"ل ن","admindemo.init4":"ك ح",
+    "admindemo.dept1":"المبيعات","admindemo.dept2":"التقنية","admindemo.dept3":"الموارد البشرية",
+    "admindemo.status1":"حاضر","admindemo.status2":"إجازة","admindemo.status3":"غائب",
+    "admindemo.cta":"اطلب عرضاً توضيحياً مباشراً",
+
     "homefeat.badge":"كل ما تحتاجه إدارة الموارد البشرية",
     "homefeat.title":"نظام واحد لكل ما يخص موظفيك",
     "homefeat.sub":"من أول يوم عمل للموظف إلى تقييمه السنوي، كل شيء في مكان واحد يحمل اسم شركتك.",
@@ -209,6 +226,23 @@ const translations = {
     "mock.title":"Today's check-in","mock.status":"Within company location","mock.company":"Company HQ","mock.time":"Check-in time","mock.timev":"8:52 AM","mock.emp":"Employee","mock.empv":"Sara Youssef","mock.action":"Check in",
 
     "logos.title":"Built for teams from 5 to 500+ employees",
+
+    /* admin dashboard preview */
+    "admindemo.badge":"Admin Dashboard",
+    "admindemo.title":"Here's what your company's dashboard looks like",
+    "admindemo.sub":"A complete dashboard to manage employees, attendance, leave, and performance reviews — under your brand, on your own domain.",
+    "admindemo.nav1":"Dashboard","admindemo.nav2":"Employees","admindemo.nav3":"Attendance",
+    "admindemo.nav4":"Leave","admindemo.nav5":"Performance","admindemo.nav6":"Settings",
+    "admindemo.stat1l":"Employees","admindemo.stat1n":"48",
+    "admindemo.stat2l":"Present today","admindemo.stat2n":"44",
+    "admindemo.stat3l":"Pending leave requests","admindemo.stat3n":"3",
+    "admindemo.stat4l":"Reviews due","admindemo.stat4n":"5",
+    "admindemo.col1":"Employee","admindemo.col2":"Department","admindemo.col3":"Status",
+    "admindemo.emp1":"Sara Youssef","admindemo.emp2":"Omar Murad","admindemo.emp3":"Lina Namer","admindemo.emp4":"Kareem Haddad",
+    "admindemo.init1":"SY","admindemo.init2":"OM","admindemo.init3":"LN","admindemo.init4":"KH",
+    "admindemo.dept1":"Sales","admindemo.dept2":"Engineering","admindemo.dept3":"HR",
+    "admindemo.status1":"Present","admindemo.status2":"On leave","admindemo.status3":"Absent",
+    "admindemo.cta":"Request a live demo",
 
     "homefeat.badge":"Everything HR needs",
     "homefeat.title":"One system for everything about your people",
