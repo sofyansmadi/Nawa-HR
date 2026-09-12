@@ -93,6 +93,7 @@ const translations = {
     "pricepage.firstmonth":"أول شهر",
     "pricepage.thenmonthly":"ثم {price} شهرياً بعد الشهر الأول",
     "pricepage.subnote50":"للفرق التي يزيد عدد موظفيها عن ٥٠، اختر خطة الشراء لمرة واحدة أو تواصل معنا لعرض سعر اشتراك مخصص.",
+    "pricepage.contactbtn":"تواصل معنا لعرض سعر خاص",
     "pricepage.inc1":"موقع بنطاق فرعي أو دومين خاص",
     "pricepage.inc2":"بصمة حضور مرتبطة بالموقع الجغرافي",
     "pricepage.inc3":"صفحات موظف وإدمن غير محدودة",
@@ -148,6 +149,25 @@ const translations = {
     "contactpage.f.note":"بإرسالك هذا النموذج، فريقنا سيتواصل معك على البريد أو الهاتف المُدخل. لا نشارك بياناتك مع أي طرف ثالث.",
     "contactpage.sent":"تم استلام رسالتك، سنتواصل معك قريباً.",
     "contactpage.f.size1":"١ - ١٠","contactpage.f.size2":"١١ - ٥٠","contactpage.f.size3":"٥١ - ٢٠٠","contactpage.f.size4":"٢٠٠+",
+
+    /* thank you page */
+    "thankyou.badge":"تم الدفع",
+    "thankyou.title":"شكراً إلك، اشتراكك صار فعّال",
+    "thankyou.sub":"استلمنا دفعتك بنجاح. فريقنا رح يتواصل معك خلال ٢٤ ساعة عمل لإعداد نطاق شركتك.",
+    "thankyou.next.title":"شو الخطوة الجاية؟",
+    "thankyou.next1t":"تأكيد بالبريد الإلكتروني",
+    "thankyou.next1d":"رح توصلك رسالة تأكيد فيها تفاصيل اشتراكك ورقم الفاتورة.",
+    "thankyou.next2t":"إعداد نطاقك",
+    "thankyou.next2d":"فريقنا رح يتواصل معك لتحديد اسم النطاق الفرعي وموقع مقر شركتك.",
+    "thankyou.next3t":"تدريب الفريق",
+    "thankyou.next3d":"رح نرسلك دليل قصير لمساعدة موظفيك على البدء بالنظام بسرعة.",
+    "thankyou.home":"الرجوع للصفحة الرئيسية",
+    "thankyou.contact":"عندك سؤال؟ تواصل معنا",
+
+    /* pricing page — payment buttons */
+    "pricepage.paybtn.loading":"جاري تحميل خيارات الدفع...",
+    "pricepage.paybtn.or":"أو",
+    "pricepage.paybtn.trial":"جرّب مجاناً ١٤ يوم بدون دفع",
 
     /* privacy policy page */
     "privacypage.badge":"سياسة الخصوصية",
@@ -306,6 +326,7 @@ const translations = {
     "pricepage.firstmonth":"first month",
     "pricepage.thenmonthly":"then {price}/month after the first month",
     "pricepage.subnote50":"For teams above 50 employees, choose the one-time plan or contact us for a custom subscription quote.",
+    "pricepage.contactbtn":"Contact us for a custom quote",
     "pricepage.inc1":"Subdomain or custom domain",
     "pricepage.inc2":"Geo-located attendance",
     "pricepage.inc3":"Unlimited employee & admin pages",
@@ -361,6 +382,25 @@ const translations = {
     "contactpage.f.note":"By submitting this form, our team will reach out at the email or phone provided. We never share your data with third parties.",
     "contactpage.sent":"Your message has been received — we'll be in touch soon.",
     "contactpage.f.size1":"1 – 10","contactpage.f.size2":"11 – 50","contactpage.f.size3":"51 – 200","contactpage.f.size4":"200+",
+
+    /* thank you page */
+    "thankyou.badge":"Payment received",
+    "thankyou.title":"Thank you — your subscription is active",
+    "thankyou.sub":"We've received your payment. Our team will reach out within 24 business hours to set up your company's domain.",
+    "thankyou.next.title":"What happens next?",
+    "thankyou.next1t":"Email confirmation",
+    "thankyou.next1d":"You'll get a confirmation email with your subscription details and invoice number.",
+    "thankyou.next2t":"Setting up your domain",
+    "thankyou.next2d":"Our team will contact you to set your subdomain name and company location.",
+    "thankyou.next3t":"Team onboarding",
+    "thankyou.next3d":"We'll send a short guide to help your employees get started with the system quickly.",
+    "thankyou.home":"Back to homepage",
+    "thankyou.contact":"Have a question? Contact us",
+
+    /* pricing page — payment buttons */
+    "pricepage.paybtn.loading":"Loading payment options...",
+    "pricepage.paybtn.or":"or",
+    "pricepage.paybtn.trial":"Try free for 14 days, no payment",
 
     /* privacy policy page */
     "privacypage.badge":"Privacy Policy",

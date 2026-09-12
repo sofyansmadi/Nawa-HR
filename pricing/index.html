@@ -80,8 +80,15 @@
           <span data-i18n="pricepage.note">للفرق التي يزيد عدد موظفيها عن ٥٠٠، تواصل معنا لعرض سعر خاص.</span>
         </div>
 
-        <div class="text-center mt-lg">
-          <a href="../contact/" class="btn btn-primary" data-i18n="cta.btn">ابدأ تجربتك المجانية</a>
+        <div class="mt-lg" id="paymentArea">
+          <div id="paypalButtons"></div>
+          <div class="text-center" style="margin-block-start:14px;">
+            <a href="../contact/" data-i18n="pricepage.paybtn.trial" style="font-size:.88rem;color:var(--text-muted);text-decoration:underline;">جرّب مجاناً ١٤ يوم بدون دفع</a>
+          </div>
+        </div>
+
+        <div class="text-center mt-lg" id="contactCta" style="display:none;">
+          <a href="../contact/" class="btn btn-primary" data-i18n="pricepage.contactbtn">تواصل معنا لعرض سعر خاص</a>
         </div>
       </div>
     </div>
@@ -162,6 +169,7 @@
 </footer>
 
 <script src="../assets/i18n.js"></script>
+<script src="../assets/paypal-config.js"></script>
 <script src="../assets/pricing.js"></script>
 <script src="../assets/script.js"></script>
 </body>
