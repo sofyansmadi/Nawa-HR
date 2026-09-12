@@ -16,7 +16,7 @@ const PAYPAL_CONFIG = {
   // then paste the Plan ID (looks like "P-XXXXXXXXXXXXXXXXXXXXX") here.
   subscriptionPlans: {
     tier5:  "P-56R155059M452771FNKSYBQQ", // up to 5 employees   — $25/mo + $150 setup
-    tier10: "PLAN_ID_TIER_10",  // 5-10 employees      — $50/mo + $150 setup
+    tier10: "P-3A239857DH321131KNKSYEUI", // 5-10 employees      — $50/mo + $150 setup
     tier20: "PLAN_ID_TIER_20",  // 10-20 employees     — $100/mo + $150 setup
     tier40: "PLAN_ID_TIER_40",  // 20-40 employees     — $125/mo + $150 setup
     tier50: "PLAN_ID_TIER_50"   // 40-50 employees     — $150/mo + $150 setup
