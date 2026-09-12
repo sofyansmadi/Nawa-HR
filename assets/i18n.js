@@ -165,10 +165,6 @@ const translations = {
     "thankyou.contact":"عندك سؤال؟ تواصل معنا",
 
     /* pricing page — payment buttons */
-    "pricepage.paybtn.loading":"جاري تحميل خيارات الدفع...",
-    "pricepage.paybtn.or":"أو",
-    "pricepage.paybtn.trial":"جرّب مجاناً ١٤ يوم بدون دفع",
-
     /* privacy policy page */
     "privacypage.badge":"سياسة الخصوصية",
     "privacypage.title":"سياسة الخصوصية",
@@ -398,10 +394,6 @@ const translations = {
     "thankyou.contact":"Have a question? Contact us",
 
     /* pricing page — payment buttons */
-    "pricepage.paybtn.loading":"Loading payment options...",
-    "pricepage.paybtn.or":"or",
-    "pricepage.paybtn.trial":"Try free for 14 days, no payment",
-
     /* privacy policy page */
     "privacypage.badge":"Privacy Policy",
     "privacypage.title":"Privacy Policy",
