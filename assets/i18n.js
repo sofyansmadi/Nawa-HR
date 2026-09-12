@@ -138,7 +138,7 @@ const translations = {
     "contactpage.badge":"تواصل معنا",
     "contactpage.title":"عندك سؤال أو تحتاج عرضاً توضيحياً؟",
     "contactpage.sub":"فريقنا يرد خلال يوم عمل واحد. اختر الطريقة الأنسب لك.",
-    "contactpage.i1t":"البريد الإلكتروني","contactpage.i1d":"hello@nawahr.com",
+    "contactpage.i1t":"البريد الإلكتروني","contactpage.i1d":"Hello@Nawa-HR.com",
     "contactpage.i2t":"الهاتف / واتساب","contactpage.i2d":"‎+962 7 9000 0000",
     "contactpage.i3t":"المكتب","contactpage.i3d":"عمّان، الأردن",
     "contactpage.i4t":"ساعات العمل","contactpage.i4d":"الأحد - الخميس، ٩ص - ٥م",
@@ -189,7 +189,7 @@ const translations = {
     "privacypage.s9t":"تعديلات على هذه السياسة",
     "privacypage.s9d":"قد نحدّث هذه السياسة من وقت لآخر، وسننشر أي تغييرات جوهرية على هذه الصفحة.",
     "privacypage.s10t":"تواصل معنا",
-    "privacypage.s10d":"لأي استفسار يخص الخصوصية، راسلنا على hello@nawahr.com.",
+    "privacypage.s10d":"لأي استفسار يخص الخصوصية، راسلنا على Hello@Nawa-HR.com.",
 
     /* terms of use page */
     "termspage.badge":"الشروط والأحكام",
@@ -219,7 +219,7 @@ const translations = {
     "termspage.s11t":"القانون الحاكم",
     "termspage.s11d":"تخضع هذه الشروط لقوانين المملكة الأردنية الهاشمية.",
     "termspage.s12t":"تواصل معنا",
-    "termspage.s12d":"لأي استفسار يخص هذه الشروط، راسلنا على hello@nawahr.com.",
+    "termspage.s12d":"لأي استفسار يخص هذه الشروط، راسلنا على Hello@Nawa-HR.com.",
 
     /* footer */
     "footer.tagline":"نظام موارد بشرية بسيط وبأسعار عادلة، مبني للشركات الصغيرة والمتوسطة.",
@@ -367,7 +367,7 @@ const translations = {
     "contactpage.badge":"Contact",
     "contactpage.title":"Have a question or need a demo?",
     "contactpage.sub":"Our team replies within one business day. Pick whatever works best for you.",
-    "contactpage.i1t":"Email","contactpage.i1d":"hello@nawahr.com",
+    "contactpage.i1t":"Email","contactpage.i1d":"Hello@Nawa-HR.com",
     "contactpage.i2t":"Phone / WhatsApp","contactpage.i2d":"+962 7 9000 0000",
     "contactpage.i3t":"Office","contactpage.i3d":"Amman, Jordan",
     "contactpage.i4t":"Working hours","contactpage.i4d":"Sun – Thu, 9am – 5pm",
@@ -418,7 +418,7 @@ const translations = {
     "privacypage.s9t":"Changes to this policy",
     "privacypage.s9d":"We may update this policy from time to time, and will post any material changes on this page.",
     "privacypage.s10t":"Contact us",
-    "privacypage.s10d":"For any privacy questions, reach us at hello@nawahr.com.",
+    "privacypage.s10d":"For any privacy questions, reach us at Hello@Nawa-HR.com.",
 
     /* terms of use page */
     "termspage.badge":"Terms of Service",
@@ -448,7 +448,7 @@ const translations = {
     "termspage.s11t":"Governing law",
     "termspage.s11d":"These terms are governed by the laws of the Hashemite Kingdom of Jordan.",
     "termspage.s12t":"Contact us",
-    "termspage.s12d":"For any questions about these terms, reach us at hello@nawahr.com.",
+    "termspage.s12d":"For any questions about these terms, reach us at Hello@Nawa-HR.com.",
 
     /* footer */
     "footer.tagline":"Simple, fairly priced HR software, built for small and mid-sized companies.",
