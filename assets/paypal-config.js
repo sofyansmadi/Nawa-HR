@@ -7,7 +7,7 @@
 const PAYPAL_CONFIG = {
   // From developer.paypal.com -> Apps & Credentials -> your app -> Client ID.
   // Use the SANDBOX client ID first to test, then switch to the LIVE one.
-  clientId: "YOUR_PAYPAL_CLIENT_ID",
+  clientId: "BAAvhIOyier1Plcdyydno151WXOG80sku0Dy6Zc8XA0fSlrxpO8EDuB3wHy7p_PccqQef8it2f17ZYTINc",
 
   // From your PayPal Business account -> Pay & Get Paid -> Subscriptions.
   // Create one plan per monthly tier below, each with:
