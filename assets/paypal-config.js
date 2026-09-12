@@ -19,6 +19,6 @@ const PAYPAL_CONFIG = {
     tier10: "P-3A239857DH321131KNKSYEUI", // 5-10 employees      — $50/mo + $150 setup
     tier20: "P-4GN112280U6767819NKSYFGQ", // 10-20 employees     — $100/mo + $150 setup
     tier40: "P-1H898371XX7332834NKSYF4Y", // 20-40 employees     — $125/mo + $150 setup
-    tier50: "PLAN_ID_TIER_50"   // 40-50 employees     — $150/mo + $150 setup
+    tier50: "P-04K4287426012371RNKSYGMY"  // 40-50 employees     — $150/mo + $150 setup
   }
 };
