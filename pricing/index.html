@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>الأسعار — Nawa HR</title>
-<meta name="description" content="احسب سعر نواة HR حسب عدد موظفيك: اشتراك شهري مرن أو شراء لمرة واحدة.">
+<meta name="description" content="سعر واحد واضح لنواة HR: $1,400 دفعة واحدة، مع النظام كامل بدون رسوم متكررة.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -38,33 +38,27 @@
   <section class="page-hero">
     <div class="container">
       <span class="badge" data-i18n="pricepage.badge">الأسعار</span>
-      <h1 data-i18n="pricepage.title">سعر يتناسب مع حجم فريقك فعلاً</h1>
-      <p data-i18n="pricepage.sub">اختر بين اشتراك شهري مرن أو شراء لمرة واحدة، واحسب سعرك مباشرة حسب عدد موظفيك.</p>
+      <h1 data-i18n="pricepage.title">سعر واحد واضح، بدون تعقيد</h1>
+      <p data-i18n="pricepage.sub">تدفع مرة واحدة، ويصير النظام ملكك بالكامل — بدون اشتراكات شهرية ولا رسوم مفاجئة.</p>
     </div>
   </section>
 
   <section style="padding-block-start:0;">
     <div class="container">
-      <div class="text-center">
-        <div class="pricing-toggle">
-          <button class="active" data-mode="sub" data-i18n="pricepage.tsub">اشتراك شهري</button>
-          <button data-mode="once" data-i18n="pricepage.tonce">شراء لمرة واحدة</button>
-        </div>
-      </div>
-
-      <div class="calc-card mt-lg" style="max-width:760px;margin-inline:auto;">
-        <div class="calc-top">
-          <div>
-            <div class="calc-price"><span id="priceValue">$250</span><small id="priceUnit"> / أول شهر</small></div>
-            <div class="calc-sub" id="priceNote">ثم $100 شهرياً بعد الشهر الأول</div>
-          </div>
+      <div class="calc-card mt-lg" style="max-width:620px;margin-inline:auto;">
+        <div class="text-center">
+          <div class="calc-price" style="justify-content:center;"><span id="priceValue">$1,400</span></div>
+          <div class="calc-sub" id="priceNote" data-i18n="pricepage.onetimenote">دفعة واحدة، ترخيص دائم بدون أي رسوم شهرية</div>
         </div>
 
-        <div class="range-wrap">
-          <div class="range-label"><span data-i18n="pricepage.emp">عدد الموظفين</span><b id="empCount">20</b></div>
-          <input type="range" id="empSlider" min="1" max="50" value="20" step="1">
-          <div class="range-ticks" id="rangeTicks"><span>1</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div>
+        <div class="currency-row" id="currencyRow">
+          <button class="active" data-cur="USD">USD</button>
+          <button data-cur="JOD">JOD</button>
+          <button data-cur="SAR">SAR</button>
+          <button data-cur="AED">AED</button>
+          <button data-cur="EGP">EGP</button>
         </div>
+        <p class="currency-note" data-i18n="pricepage.currencynote">الأسعار بالعملات الأخرى تقريبية للعرض فقط — الدفع الفعلي يتم بالدولار الأمريكي عبر PayPal.</p>
 
         <ul class="calc-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pricepage.inc1">موقع بنطاق فرعي أو دومين خاص</span></li>
@@ -75,42 +69,18 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg><span data-i18n="pricepage.inc6">تنبيهات وإشعارات فورية</span></li>
         </ul>
 
-        <div class="tier-note" id="contactUsNote" style="display:none;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="11" r="2.5"/></svg>
-          <span data-i18n="pricepage.note">للفرق التي يزيد عدد موظفيها عن ٥٠٠، تواصل معنا لعرض سعر خاص.</span>
-        </div>
-
         <div class="mt-lg" id="paymentArea">
           <div id="paypalButtons"></div>
-        </div>
-
-        <div class="text-center mt-lg" id="contactCta" style="display:none;">
-          <a href="../contact/" class="btn btn-primary" data-i18n="pricepage.contactbtn">تواصل معنا لعرض سعر خاص</a>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section-alt">
-    <div class="container">
+    <div class="container" style="max-width:760px;">
       <div class="section-head center">
-        <h2 data-i18n="pricepage.compare.title">ماذا يشمل كل خيار</h2>
-      </div>
-      <div style="max-width:760px;margin-inline:auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md);padding:8px 24px;">
-        <table class="compare-table">
-          <thead><tr>
-            <th data-i18n="pricepage.col1">الميزة</th>
-            <th class="text-center" data-i18n="pricepage.col2">اشتراك شهري</th>
-            <th class="text-center" data-i18n="pricepage.col3">شراء لمرة واحدة</th>
-          </tr></thead>
-          <tbody>
-            <tr><td data-i18n="pricepage.row1">نطاق فرعي أو دومين خاص</td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td></tr>
-            <tr><td data-i18n="pricepage.row2">تحديثات مستمرة للنظام</td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td><td class="check" style="color:var(--text-muted);font-size:.8rem;">سنة واحدة</td></tr>
-            <tr><td data-i18n="pricepage.row3">دعم فني</td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td></tr>
-            <tr><td data-i18n="pricepage.row4">بوابة دفع (PayPal قريباً)</td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td></tr>
-            <tr><td data-i18n="pricepage.row5">مناسب للنمو السريع في عدد الموظفين</td><td class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></td><td class="check">—</td></tr>
-          </tbody>
-        </table>
+        <h2 data-i18n="pricepage.why.title">ليش سعر واحد بدل باقات متعددة؟</h2>
+        <p data-i18n="pricepage.why.sub">عشان تعرف بالضبط شو رح تدفع من أول يوم، بدون ما تحسب عدد موظفين أو تراقب فاتورة شهرية تتغير كل مرة.</p>
       </div>
     </div>
   </section>
@@ -121,16 +91,16 @@
         <h2 data-i18n="pricepage.faq.title">أسئلة شائعة حول الأسعار</h2>
       </div>
       <div class="faq-item open">
-        <div class="faq-q"><span data-i18n="pricepage.faq1q">هل يمكن تغيير عدد الموظفين لاحقاً؟</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a" data-i18n="pricepage.faq1a">نعم، في خطة الاشتراك الشهري يتم احتساب السعر تلقائياً حسب عدد الموظفين النشطين.</div>
+        <div class="faq-q"><span data-i18n="pricepage.faq1q">هل $1,400 يشمل كل عدد الموظفين؟</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
+        <div class="faq-a" data-i18n="pricepage.faq1a">نعم، سعر ثابت واحد بغض النظر عن عدد موظفيك أو عدد فروعك.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><span data-i18n="pricepage.faq2q">ما وسائل الدفع المتاحة؟</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a" data-i18n="pricepage.faq2a">نعمل حالياً على ربط بوابة الدفع عبر PayPal.</div>
+        <div class="faq-a" data-i18n="pricepage.faq2a">الدفع متاح مباشرة عبر PayPal (بطاقة ائتمان أو رصيد PayPal).</div>
       </div>
       <div class="faq-item">
         <div class="faq-q"><span data-i18n="pricepage.faq3q">هل يوجد تجربة مجانية؟</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></div>
-        <div class="faq-a" data-i18n="pricepage.faq3a">نعم، تحصل على ١٤ يوماً مجاناً لتجربة النظام كاملاً.</div>
+        <div class="faq-a" data-i18n="pricepage.faq3a">نعم، تحصل على ١٤ يوماً مجاناً لتجربة النظام كاملاً قبل الدفع.</div>
       </div>
     </div>
   </section>
