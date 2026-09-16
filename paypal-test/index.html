@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>اختبار الدفع — $1</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">صفحة اختبار مؤقتة — غير مرتبطة بالموقع</span>
+      <h1>اختبار عملية الدفع — $1</h1>
+      <p>هاي صفحة مؤقتة لتجربة الدفع الفعلي عبر PayPal بمبلغ رمزي. رح تُحذف بعد التأكد إن كل شي شغال.</p>
+    </div>
+  </section>
+
+  <section style="padding-block-start:0;">
+    <div class="container">
+      <div class="calc-card" style="max-width:420px;margin-inline:auto;">
+        <div class="text-center">
+          <div class="calc-price" style="justify-content:center;">$1</div>
+          <div class="calc-sub">دفعة اختبار حقيقية عبر PayPal</div>
+        </div>
+        <div class="mt-lg" id="paypalButtons"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="../assets/paypal-config.js"></script>
+<script>
+(function(){
+  const TEST_PRICE = "1";
+  let ready = false;
+  let queue = [];
+
+  const s = document.createElement('script');
+  s.src = 'https://www.paypal.com/sdk/js?client-id=' + encodeURIComponent(PAYPAL_CONFIG.clientId) + '&currency=USD&components=buttons&intent=capture';
+  s.setAttribute('data-namespace', 'paypal_test');
+  s.onload = function(){ ready = true; queue.forEach(fn => fn()); queue = []; };
+  document.head.appendChild(s);
+
+  function render(){
+    window.paypal_test.Buttons({
+      style: { layout: 'vertical', color: 'gold', shape: 'pill', label: 'pay' },
+      createOrder: function(data, actions){
+        return actions.order.create({
+          purchase_units: [{
+            amount: { value: TEST_PRICE },
+            description: 'Nawa HR — TEST payment ($1)'
+          }]
+        });
+      },
+      onApprove: function(data, actions){
+        return actions.order.capture().then(function(details){
+          document.getElementById('paypalButtons').innerHTML =
+            '<p style="text-align:center;font-weight:800;color:var(--success);">تم الدفع بنجاح! رقم العملية: ' + details.id + '</p>';
+        });
+      }
+    }).render('#paypalButtons');
+  }
+  if(ready) render(); else queue.push(render);
+})();
+</script>
+</body>
+</html>
