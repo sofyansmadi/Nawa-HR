@@ -213,6 +213,7 @@ const translations = {
     "footer.product":"المنتج","footer.company":"الشركة","footer.legal":"قانوني",
     "footer.privacy":"سياسة الخصوصية","footer.terms":"الشروط والأحكام",
     "footer.rights":"جميع الحقوق محفوظة.",
+    "footer.entity":"<bdi dir=\"ltr\">Nawa HR</bdi> منتج تابع لشركة <bdi dir=\"ltr\">LAMSA LTD</bdi>، شركة مسجلة في إنجلترا وويلز برقم <bdi dir=\"ltr\">17517932</bdi>. العنوان المسجل: <bdi dir=\"ltr\">128 City Road, London, EC1V 2NX, United Kingdom</bdi>.",
     "footer.pay":"طرق الدفع القادمة"
   },
 
@@ -429,6 +430,7 @@ const translations = {
     "footer.product":"Product","footer.company":"Company","footer.legal":"Legal",
     "footer.privacy":"Privacy policy","footer.terms":"Terms of service",
     "footer.rights":"All rights reserved.",
+    "footer.entity":"Nawa HR is a product of LAMSA LTD, a company registered in England and Wales (Company No. 17517932). Registered office: 128 City Road, London, EC1V 2NX, United Kingdom.",
     "footer.pay":"Payments coming soon"
   }
 };
